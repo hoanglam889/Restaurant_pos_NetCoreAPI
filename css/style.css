@@ -1,0 +1,74 @@
+/* === BẮT BUỘC CÓ === */
+body {
+    /* Ngăn <body> (trang chính) cuộn */
+    overflow: hidden; 
+}
+
+/* === FIX LỖI CONTENT KHÔNG CUỘN === */
+/* Ta phải set height 100% cho div#content 
+    (Nơi bạn load AJAX vào)
+*/
+#content {
+    /* Cao 100% màn hình (100vh)
+        TRỪ đi 56px (chiều cao của Navbar)
+    */
+    height: calc(100vh - 56px);
+
+    /* KHÔNG cho #content cuộn,
+        để cho .content-column (bên trong) tự cuộn
+    */
+    overflow: hidden; 
+}
+/* === HẾT FIX === */
+
+
+/* === CSS CŨ CỦA BẠN (GIỮ NGUYÊN) === */
+
+.bg-light-custom {
+    background-color: #1d7de2 !important;
+}
+.light-custom {
+    background-color: #41a5ee;
+    display: block;
+    width: 100% !important;
+}
+.back-ground-sidebar {
+    background-color: #f9f9f9 !important;
+    /* Xóa min-height: 100vh ở đây
+       vì offcanvas-lg nó tự lo rồi 
+    */
+}
+
+/* Style cho link */
+.nav-link {
+    color: #333; 
+    transition: background-color 0.2s ease, color 0.2s ease;
+    padding: 0.75rem 1rem; 
+    border-radius: 0.375rem; 
+}
+.nav-link:hover {
+    background-color: #e9ecef; 
+    color: #1d7de2;
+}
+.nav-link.active {
+    background-color: #1d7de2; 
+    color: #ffffff; 
+    font-weight: 500; 
+}
+.nav-link.active i {
+    color: #ffffff; 
+}
+
+.clickable-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.clickable-card:hover {
+    filter: brightness(80%);
+}
+
+/* LƯU Ý: TOÀN BỘ CSS CŨ CHO #sidebarMenu
+    ĐÃ ĐƯỢC XÓA SẠCH
+    VÌ offcanvas-lg TỰ LO HẾT RỒI
+*/
+

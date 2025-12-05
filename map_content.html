@@ -1,0 +1,142 @@
+<style>
+    /* CSS "cục bộ" cho wrapper này.
+      Nó chỉ ảnh hưởng file này.
+    */
+    .map_content {
+        /* Cao 100% theo div#content (cha) */
+        height: 100%; 
+        /* TỰ CUỘN (quan trọng nhất) */
+        overflow-y: auto; 
+        overflow-x: hidden;
+    }
+</style>
+<div class="map_content">
+<!-- Thêm container để nhìn cho đẹp -->
+<div class="container-fluid p-2 p-md-1">
+
+
+<div class="row">
+    <h4>Khu A</h4>
+</div>
+<div class="row" id="table-container">
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-light-custom clickable-card" data-id="A1">
+    <div class="card-body text-center text-white">
+        <h5 class="card-title">A1</h5>
+        <p class="card-text mb-0">Trạng thái:</p>
+        <span class="badge bg-white text-primary fs-6">Sẵn sàng</span>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-success">
+    <div class="card-body text-center text-white clickable-card" data-id="A2">
+        <h5 class="card-title">A2</h5>
+        <ul class="list-unstyled mb-0 small">
+            <li><i class="bi bi-clock-fill me-2"></i>Giờ vào: 19:30</li>
+            <li class="mt-2 fs-6 fw-bold"> <i class="bi bi-cash-stack me-2"></i>Tổng: 320.000đ
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-secondary">
+    <div class="card-body text-center text-white clickable-card" data-id="A3">
+        <h5 class="card-title">A3</h5>
+        <p class="card-text mb-0">Trạng thái:</p>
+        <span class="badge bg-white text-secondary fs-6">Đã đặt trước</span>
+</div>
+</div>
+</div>
+
+    <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100 shadow bg-warning">
+        <div class="card-body text-center text-dark clickable-card" data-id="A4">
+            <h5 class="card-title">A4</h5>
+            <p class="card-text mb-0">Trạng thái:</p>
+            <span class="badge bg-dark text-warning fs-6">Cần dọn</span>
+    </div>
+    </div>
+    </div>
+        <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100 shadow bg-light-custom">
+        <div class="card-body text-center text-white clickable-card" data-id="A5">
+            <h5 class="card-title">A5</h5>
+            <p class="card-text mb-0">Trạng thái:</p>
+            <span class="badge bg-white text-primary fs-6">Sẵn sàng</span>
+    </div>
+    </div>
+</div>
+</div>
+<div class="row">
+    <div class="row">
+    <h4>Khu B</h4>
+</div>
+<div class="row">
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-light-custom">
+    <div class="card-body text-center text-white clickable-card" data-id="B1">
+        <h5 class="card-title">A1</h5>
+        <p class="card-text mb-0">Trạng thái:</p>
+        <span class="badge bg-white text-primary fs-6">Sẵn sàng</span>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-success">
+    <div class="card-body text-center text-white clickable-card" data-id="B2">
+        <h5 class="card-title">A2</h5>
+        <ul class="list-unstyled mb-0 small">
+            <li><i class="bi bi-clock-fill me-2"></i>Giờ vào: 19:30</li>
+            <li class="mt-2 fs-6 fw-bold"> <i class="bi bi-cash-stack me-2"></i>Tổng: 320.000đ
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+<div class="card h-100 shadow bg-secondary">
+    <div class="card-body text-center text-white clickable-card" data-id="B3">
+        <h5 class="card-title">A3</h5>
+        <p class="card-text mb-0">Trạng thái:</p>
+        <span class="badge bg-white text-secondary fs-6">Đã đặt trước</span>
+</div>
+</div>
+</div>
+
+    <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100 shadow bg-warning">
+        <div class="card-body text-center text-dark clickable-card" data-id="B4">
+            <h5 class="card-title">A4</h5>
+            <p class="card-text mb-0">Trạng thái:</p>
+            <span class="badge bg-dark text-warning fs-6">Cần dọn</span>
+    </div>
+    </div>
+    </div>
+        <div class="col-6 col-sm-5 col-md-4 col-lg-3 mb-4">
+    <div class="card h-100 shadow bg-light-custom">
+        <div class="card-body text-center text-white clickable-card" data-id="B5">
+            <h5 class="card-title">A5</h5>
+            <p class="card-text mb-0">Trạng thái:</p>
+            <span class="badge bg-white text-primary fs-6">Sẵn sàng</span>
+    </div>
+    </div>
+</div>
+    </div>
+    </div>
+</div>
+</div>
+<script>
+    document.querySelectorAll('.clickable-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const tableId = this.dataset.id;
+        // Gọi AJAX để load menu_food.html + ID bàn
+        loadContent(`menu_food.html?id=${tableId}`);
+    });
+});
+</script>
